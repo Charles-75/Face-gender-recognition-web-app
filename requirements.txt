@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+tqdm
+pyodbc
+matplotlib
+opencv
+flask
