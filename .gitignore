@@ -1,0 +1,8 @@
+.idea
+*.ipynb
+.ipynb_checkpoints
+.ipynb_checkpoints/*
+__pycache__/*
+static/predict/*
+static/uploads/*
+/models/backup/

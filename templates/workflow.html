@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+    <div class="card" style="width: 60rem; margin-top: 3%; margin-left: auto; margin-right: auto">
+        <h3 class="card-header" style="text-align: center; color: #7e8083"><span style="color: #144dae">AI-Vision</span> : Machine Learning pipeline</h3>
+        <img class="card-img-top" src="{{ url_for('static', filename='images/pipeline.PNG') }}" alt="Card image cap">
+        <div class="card-body" style="text-align: center">
+            <a href="{{ url_for('face_app') }}" class="btn btn-primary" style="font-size: 1.3em;">Try it now !</a>
+        </div>
+    </div>
+    <div style="margin-top: 2%; text-align: center">
+        <img src="{{ url_for('static', filename='images/opencv.png') }}" alt="opencv" width="150" height="150" style="padding-left: 2%">
+        <img src="{{ url_for('static', filename='images/python.png') }}" alt="python" width="300" height="150" style="padding-left: 2%">
+        <img src="{{ url_for('static', filename='images/scikit-learn.png') }}" alt="scikit-learn" width=220" height="100" style="padding-left: 2%">
+        <img src="{{ url_for('static', filename='images/flask.png') }}" alt="flask" width="150" height="150" style="padding-left: 2%">
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="content">Welcome to <span style="color: #144dae">AI-Vision</span>, a Face recognition web application</h1>
+            <p class="lead">This application is driven by data and Machine Learning models. As soon as a user upload an
+                image, the app will automatically detect face and classify gender.</p>
+            <p></p>
+        </div>
+    </div>
+    <div class="card" style="width: 60rem; margin-top: 3%; margin-left: auto; margin-right: auto">
+        <h3 class="card-header" style="color: #144dae; text-align: center">Face Recognition Application Process</h3>
+        <img class="card-img-top" src="{{ url_for('static', filename='images/schema.PNG') }}" alt="Card image cap">
+    </div>
+{% endblock %}
+
