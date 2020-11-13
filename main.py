@@ -6,6 +6,8 @@ import os
 app = Flask(__name__, template_folder="templates")
 
 UPLOAD_FOLDER = './static/uploads'
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
 
 
 @app.route('/', methods=["GET"])

@@ -124,7 +124,7 @@ def tune_svm():
     }
 
     # GridSearch CV hyperparameters tuning
-    cv = StratifiedKFold(n_splits=5)
+    cv = StratifiedKFold(n_splits=5, random_state=0)
     model_grid = GridSearchCV(model_tune, param_grid=param_grid, scoring=f1_macro, cv=cv, verbose=1)
     model_grid.fit(X_train, y_train)
 

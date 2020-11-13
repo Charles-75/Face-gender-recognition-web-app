@@ -1,6 +1,7 @@
 from glob import glob
 import cv2
 import pickle
+import os
 
 
 # Load CascadeClassifier model to detect face
@@ -18,6 +19,10 @@ print('Model loaded sucessfully')
 gender_pre = ['Male', 'Female']
 font = cv2.FONT_HERSHEY_SIMPLEX
 
+PREDICT_FOLDER = './static/predict'
+if not os.path.exists(PREDICT_FOLDER):
+    os.makedirs(PREDICT_FOLDER)
+
 
 def pipeline_model(path, filename, color='bgr'):
     # Read image in cv2
@@ -31,7 +36,7 @@ def pipeline_model(path, filename, color='bgr'):
     faces = haar.detectMultiScale(gray, 1.5, 3)
     for x, y, w, h in faces:
         # Drawing a rectangle around the face
-        cv2.rectangle(img, (x,y), (x+w, y+h), (255,255,0), 4)
+        cv2.rectangle(img, (x,y), (x+w, y+h), (255,255,0), 3)
         # Crop the image
         crop_image = gray[y:y+h, x:x+w]
         # Normalization
@@ -53,7 +58,7 @@ def pipeline_model(path, filename, color='bgr'):
         prediction = results.argmax()
         score = results[prediction]
         text = "%s : %0.2f"%(gender_pre[prediction], score)
-        cv2.putText(img, text, (x,y), font, 2, (255,255,0), 4)
+        cv2.putText(img, text, (x,y), font, 2, (255,255,0), 3)
 
     cv2.imwrite(f'./static/predict/{filename}', img)
 
