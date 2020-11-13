@@ -16,4 +16,4 @@ In order to test the web application locally, execute `python main.py` at the pr
    *  Pandas, a data analysis library
    *  Matplotlib, a visualization library
    *  Scikit-Learn, to build our ML models
-*  HTML/CSS and Boostrap 4 for the web-UI
+*  HTML/CSS and Bootstrap 4 for the web-UI
