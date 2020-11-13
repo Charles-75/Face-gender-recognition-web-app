@@ -30,12 +30,15 @@
         <div class="content">
             {% block bodyblock %}{% endblock %}
         </div>
-
-        <footer class="footer">
-            <img src="{{ url_for('static', filename='images/footer.jpg') }}" alt="" height="180">
-            <p class="p-footer">Copyrights @ 2020 AI-Vision, all rights reserved.</p>
-            <p class="p-footer">Solution powered by Charles B.</p>
-        </footer>
     </div>
+
+    <footer class="footer">
+        <img src="{{ url_for('static', filename='images/footer.jpg') }}" alt="" height="180">
+        <div class="div-footer">Copyrights @ 2020 AI-Vision, all rights reserved.</div>
+        <div class="div-footer">Solution powered by Charles B.</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>

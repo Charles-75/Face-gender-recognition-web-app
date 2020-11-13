@@ -1,5 +1,4 @@
 body{
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +23,7 @@ li{
 .b-link{
     font-size: 1.6em;
 }
-.p-footer{
+.div-footer{
     color: white;
 }
 .predict{
