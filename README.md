@@ -4,7 +4,8 @@ A face detector and gender prediction web application using Computer Vision and 
 
 ## Get started
 
-In order to test the web application locally, execute `python main.py` at the project's root to run flask server on localhost port 8000 (127.0.0.1:8000 in your favorite web browser).
+Make sure beforehand that you have all the requisite libraries installed by executing `pip install -r requirements.txt`.  
+In order to test the web application locally, execute `python main.py` at the project's root to run flask server on localhost port 8000 (127.0.0.1:8000 in your favorite web browser). 
 
 ## Tech Stack
 *  Python for backend
