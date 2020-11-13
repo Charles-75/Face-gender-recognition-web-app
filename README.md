@@ -2,6 +2,8 @@
 
 A face detector and gender prediction web application using Computer Vision and Machine Learning. 
 
+<img src="./static/images/example.PNG" alt="example"/>
+
 ## Get started
 
 Make sure beforehand that you have all the requisite libraries installed by executing `pip install -r requirements.txt`.  
